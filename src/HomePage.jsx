@@ -1,10 +1,6 @@
 import { useState, useRef } from 'react'
 import { languages } from 'countries-list'
 
-// Debug: Let's see what languages actually contains
-console.log('Languages data:', languages);
-console.log('First few entries:', Object.entries(languages).slice(0, 5));
-
 // Create language list from the countries-list library
 const LANGUAGES = Object.entries(languages)
   .map(([code, langData]) => {
@@ -21,8 +17,6 @@ const LANGUAGES = Object.entries(languages)
     return a.name.localeCompare(b.name);
   });
 
-console.log('Languages loaded:', LANGUAGES.length);
-console.log('Sample languages:', LANGUAGES.slice(0, 5));
 
 function HomePage() {
   const [text, setText] = useState('')

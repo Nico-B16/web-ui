@@ -1,0 +1,40 @@
+/* Color Variables */
+:root {
+  --color-primary: #4285f4;
+  --color-primary-dark: #3367d6;
+  --color-text: #202124;
+  --color-text-light: #70757a;
+  --color-text-muted: #5f6368;
+  --color-border: #dfe1e5;
+  --color-border-light: #dadce0;
+  --color-bg: #ffffff;
+  --color-bg-light: #f8f9fa;
+  --color-bg-lighter: #f1f3f4;
+  --color-link: #1a0dab;
+  --color-link-green: #006621;
+  --color-link-active: #e8f0fe;
+  --color-error: #d32f2f;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-shadow-dark: rgba(0, 0, 0, 0.15);
+
+  /* Sizes */
+  --size-logo: 272px;
+  --size-logo-small: 92px;
+  --size-search-width: 500px;
+  --size-search-width-small: 600px;
+  --size-results-max-width: 600px;
+  --size-filter-width: 150px;
+  --size-filter-dropdown-min-width: 200px;
+
+  /* Border Radius */
+  --radius-round: 24px;
+  --radius-md: 8px;
+  --radius-sm: 4px;
+
+  /* Z-index */
+  --z-dropdown: 10000;
+  --z-dropdown-wrapper: 1000;
+  --z-filter-group: 100;
+  --z-filter-bar: 40;
+  --z-header: 50;
+}

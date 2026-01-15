@@ -32,6 +32,7 @@ function SearchPage() {
   const [results, setResults] = useState(null);
   const [loading, setLoading] = useState(true);
   const inputRef = useRef(null);
+  const BASE_URL = "http://localhost:7000";
 
   // Filter states - initialize from URL params
   const [author, setAuthor] = useState(initialAuthor);
@@ -57,7 +58,7 @@ function SearchPage() {
     setLoading(true);
 
     try {
-      let url = `http://localhost:7003/search?q=${encodeURIComponent(searchQuery)}`;
+      let url = `${BASE_URL}/search?q=${encodeURIComponent(searchQuery)}`;
       
       if (authorFilter) {
         url += `&author=${encodeURIComponent(authorFilter)}`;
@@ -80,7 +81,7 @@ function SearchPage() {
       setYear(yearFilter);
     } catch (error) {
       console.error('Search error:', error);
-      alert('Error: Make sure your server is running on port 7003');
+      alert(`Error during search: ${error.message}`);
     } finally {
       setLoading(false);
     }

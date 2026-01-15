@@ -30,6 +30,8 @@ function SearchPage() {
   
   const [text, setText] = useState(query);
   const [results, setResults] = useState(null);
+  console.log(results);
+  
   const [loading, setLoading] = useState(true);
   const inputRef = useRef(null);
   const BASE_URL = "http://localhost:7000";

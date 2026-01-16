@@ -323,7 +323,7 @@ function SearchPage() {
               {results.results.map((book) => (
                 <a
                   key={book.book_id}
-                  href={`https://www.gutenberg.org/ebooks/${book.book_id}`}
+                  href={`https://www.gutenberg.org/cache/epub/${book.book_id}/pg${book.book_id}.txt`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="result-item-link"
